@@ -9,7 +9,6 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
     return 'Loading...';
   }
 
-
   return (
     <div className={styles.container}>
       <Grid container spacing={3} justify="center">
@@ -36,7 +35,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              Number of active cases of COVID-19
+              Number of Infected cases of COVID-19
             </Typography>
           </CardContent>
         </Grid>
@@ -63,7 +62,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              Number of active cases of COVID-19
+              Number of Recovered cases of COVID-19
             </Typography>
           </CardContent>
         </Grid>
@@ -90,7 +89,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2">
-              Number of active cases of COVID-19
+              Number of Deaths caused due to COVID-19
             </Typography>
           </CardContent>
         </Grid>
